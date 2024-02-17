@@ -1,3 +1,4 @@
 *.pbo
 *.vscode
+*.xcf
 build
