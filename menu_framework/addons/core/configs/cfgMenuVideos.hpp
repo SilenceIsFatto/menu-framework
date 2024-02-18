@@ -10,16 +10,16 @@
         path = "a3\missions_f_epa\video\a_in_intro.ogv";
         name = "Arma Intro";
     };
-    class intro_m05_vin : vr_boot
-    {
-        path = "a3\missions_f_exp\video\exp_m05_vin.ogv";
-        name = "Apex Intro";
-    };
-    class exp_m02_vin : vr_boot
-    {
-        path = "a3\missions_f_exp\video\exp_m02_vin.ogv";
-        name = "Apex Briefing";
-    };
+    // class intro_m05_vin : vr_boot
+    // {
+    //     path = "a3\missions_f_exp\video\exp_m05_vin.ogv";
+    //     name = "Apex Intro";
+    // };
+    // class exp_m02_vin : vr_boot
+    // {
+    //     path = "a3\missions_f_exp\video\exp_m02_vin.ogv";
+    //     name = "Apex Briefing";
+    // };
 
     class intro_overlord
     {
