@@ -10,6 +10,9 @@ player setVariable ["menu_framework_firstTime", true]; // makes startup video wi
 
 private _audio = profileNamespace getVariable ["menu_framework_Audio", "menu_framework_intro_1"];
 
+setViewDistance 500;
+setTerrainGrid 50;
+
 while {player getVariable ["menu_framework_canVideo", false] && {profileNamespace getVariable ["menu_framework_Video", "intro_overlord"] isNotEqualTo "Menu_None"}} do
 {
     player setVariable ["menu_framework_canVideo", false];
