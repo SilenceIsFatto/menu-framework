@@ -1,17 +1,22 @@
-    class intro_1
+    class intro_east_wind
     {
-        song = "menu_framework_intro_1";
-        name = "MTF 'Last Hope'";
+        song = "AmbientTrack01a_F";
+        name = "The East Wind";
     };
-    class intro_2
+    class intro_night_ambient
     {
-        song = "menu_framework_intro_2";
-        name = "SCP Overlord";
+        song = "AmbientTrack04_F";
+        name = "Night Ambience";
     };
-    class intro_3
+    class intro_anomaly
     {
-        song = "menu_framework_intro_3";
-        name = "Facility Breach";
+        song = "anomaly_07_05_v1";
+        name = "Anomaly";
+    };
+    class intro_underwater_calm
+    {
+        song = "BackgroundTrack01_F";
+        name = "Calm Seas";
     };
     class rain_light
     {
@@ -23,16 +28,6 @@
         song = "menu_framework_wind_long";
         name = "Wind";
     };
-    // class rain_car
-    // {
-    //     song = "menu_framework_rain_car";
-    //     name = "Rain (Car Roof)";
-    // };
-    // class wind_short
-    // {
-    //     song = "menu_framework_wind_short";
-    //     name = "Wind (Car Window)";
-    // };
     // class wind_REALLYshort
     // {
     //     song = "menu_framework_wind_REALLYshort";

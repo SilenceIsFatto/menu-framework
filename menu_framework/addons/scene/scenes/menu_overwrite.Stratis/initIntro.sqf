@@ -20,7 +20,7 @@ while {player getVariable ["menu_framework_canVideo", false] && {profileNamespac
     private _videoPath = [(configFile >> "menu_framework_videos" >> _background), "path", false] call BIS_fnc_returnConfigEntry;
     private _delay = [(configFile >> "menu_framework_videos" >> _background), "delay", -1] call BIS_fnc_returnConfigEntry;
 
-    if (_videoPath isEqualTo false && {_background isNotEqualTo ""}) exitWith {hint "Erm... the video path doesn't exist!"};
+    if (_videoPath isEqualTo false && {_background isNotEqualTo ""}) then {hint "Erm... the video path doesn't exist!"};
 
     private _video = [_videoPath, [safeZoneX, safeZoneY, safeZoneW, safeZoneH], [1,1,1,1], "", [0,0,0,1], false] spawn BIS_fnc_playVideo;
 

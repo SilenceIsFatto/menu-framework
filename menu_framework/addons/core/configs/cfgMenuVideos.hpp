@@ -21,11 +21,10 @@
     //     name = "Apex Briefing";
     // };
 
-    class intro_overlord
+    class intro_android
     {
-        path = QPATHTOFOLDER(videos\intro_overlord.ogv);
-        name = "SCP Overlord";
-        // Credits to: https://steamcommunity.com/sharedfiles/filedetails/?id=2293759654
+        path = QPATHTOFOLDER(videos\intro_android.ogv);
+        name = "Vanguard Capture";
     };
     class intro_winter
     {
@@ -35,13 +34,13 @@
     class intro_police
     {
         path = QPATHTOFOLDER(videos\intro_police.ogv);
-        name = "SCO-19 Night Call";
+        name = "SCO-19 Night Call (Rain)";
         song = "menu_framework_rain_light";
     };
     class intro_canada
     {
         path = QPATHTOFOLDER(videos\intro_canada.ogv);
-        name = "Antistasi Ultimate - Canada";
+        name = "Canadian Army (Wind)";
         song = "menu_framework_wind_long";
     };
 

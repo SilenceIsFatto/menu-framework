@@ -50,6 +50,7 @@ private _songNameArray = [];
         // diag_log _song;
 
         if (_song isEqualTo "NONE") then {
+            if !([player] call menu_framework_fnc_isInMenu) exitWith {};
             [["Menu_None"]] call menu_framework_fnc_musicSoundtrack;
         };
 
@@ -58,8 +59,6 @@ private _songNameArray = [];
             if (_song isEqualTo "NOTSET") then {_song = profileNamespace getVariable ["menu_framework_Audio", "menu_intro_1"]};
             [[_song]] call menu_framework_fnc_musicSoundtrack;
         };
-
-        // if (player getVariable ["menu_framework_videoDelayed", false]) then {player setVariable ["menu_framework_videoDelayed", false]; diag_log "Delayed Video Running, Video Changed"};
 
         profileNamespace setVariable ["menu_framework_Video", _value];
 
@@ -70,7 +69,7 @@ private _songNameArray = [];
         // diag_log "Delayed Video Running, Video Changed";
 
         [""] spawn BIS_fnc_playVideo;
-    } // don't add a ; here... I made that mistake once
+    }
 ] call CBA_fnc_addSetting;
 
 [
@@ -95,9 +94,6 @@ private _songNameArray = [];
         if (_song isNotEqualTo "NOTSET") exitWith { // if current background uses custom audio, exit early
             profileNamespace setVariable ["menu_framework_Audio", _value]; // set the audio so it gets grabbed correctly when background changes
             false
-            // if !([player] call menu_framework_fnc_isInMenu) exitWith {};
-            // [[_song]] call menu_framework_fnc_musicSoundtrack;
-            // profileNamespace setVariable ["menu_framework_Audio", _song];
         };
         
         profileNamespace setVariable ["menu_framework_Audio", _value];
@@ -105,5 +101,5 @@ private _songNameArray = [];
         if !([player] call menu_framework_fnc_isInMenu) exitWith {};
 
         [[_value]] call menu_framework_fnc_musicSoundtrack;
-    } // don't add a ; here... I made that mistake once
+    }
 ] call CBA_fnc_addSetting;
