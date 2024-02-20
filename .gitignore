@@ -2,3 +2,4 @@
 *.vscode
 *.xcf
 build
+release
