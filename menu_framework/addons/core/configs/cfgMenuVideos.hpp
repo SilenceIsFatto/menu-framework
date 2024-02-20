@@ -1,3 +1,15 @@
+    /*
+        the "path" value expects a string pointing to an .ogv video file.
+
+        the "name" value is what gets used in the cba settings.
+
+        the "song" value expects a string pointing to a CfgMusic entry, though can also be set to "NONE" to not play any music at all.
+        > If no value is set, no song is forced and cba settings are used.
+
+        the "delay" value expects an integer. This will be the delay (in seconds) before a video starts playing again after completion.
+        > If no value is set, it will automatically loop when the video finishes.
+    */
+
     class vr_boot
     {
         path = "a3\missions_f_bootcamp\video\vr_boot.ogv";
@@ -9,17 +21,8 @@
     {
         path = "a3\missions_f_epa\video\a_in_intro.ogv";
         name = "Arma Intro";
+        // inherits both delay and song values from vr_boot
     };
-    // class intro_m05_vin : vr_boot
-    // {
-    //     path = "a3\missions_f_exp\video\exp_m05_vin.ogv";
-    //     name = "Apex Intro";
-    // };
-    // class exp_m02_vin : vr_boot
-    // {
-    //     path = "a3\missions_f_exp\video\exp_m02_vin.ogv";
-    //     name = "Apex Briefing";
-    // };
 
     class intro_android
     {

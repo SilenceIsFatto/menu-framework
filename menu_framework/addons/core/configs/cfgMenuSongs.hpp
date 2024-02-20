@@ -1,3 +1,9 @@
+    /*
+        the "song" value expects a string pointing to a CfgMusic entry.
+
+        the "name" value is what gets used in the cba settings.
+    */
+
     class intro_east_wind
     {
         song = "AmbientTrack01a_F";
