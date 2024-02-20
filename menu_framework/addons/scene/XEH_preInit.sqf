@@ -22,7 +22,7 @@ private _nameArray = [];
         _pathArray pushBack _path;
         _nameArray pushBack _name;
     };
-} forEach _videos;
+} forEach _videos; // grab each video entry + data for _x
 
 private _songCfgNameArray = [];
 private _songNameArray = [];
@@ -33,7 +33,7 @@ private _songNameArray = [];
     
     _songCfgNameArray pushBack _song;
     _songNameArray pushBack _name;
-} forEach _songs;
+} forEach _songs; // grab each song entry
 
 [
     "menu_framework_Video", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
@@ -52,13 +52,13 @@ private _songNameArray = [];
         if (_song isEqualTo "NONE") then {
             if !([player] call menu_framework_fnc_isInMenu) exitWith {};
             [["Menu_None"]] call menu_framework_fnc_musicSoundtrack;
-        };
+        }; // this ensures that if you swap background and it has a song restriction, the current song stops
 
         if (_song isNotEqualTo "NONE") then {
             if !([player] call menu_framework_fnc_isInMenu) exitWith {};
             if (_song isEqualTo "NOTSET") then {_song = profileNamespace getVariable ["menu_framework_Audio", "menu_intro_1"]};
             [[_song]] call menu_framework_fnc_musicSoundtrack;
-        };
+        }; // this ensures that if you swap background and it has no restriction, song continues as normal
 
         profileNamespace setVariable ["menu_framework_Video", _value];
 
@@ -89,7 +89,7 @@ private _songNameArray = [];
             if !([player] call menu_framework_fnc_isInMenu) exitWith {};
             [["Menu_None"]] call menu_framework_fnc_musicSoundtrack;
             profileNamespace setVariable ["menu_framework_Audio", _value];
-        };
+        }; // can't be bothered commenting this, code doesn't lie but I do
         
         if (_song isNotEqualTo "NOTSET") exitWith { // if current background uses custom audio, exit early
             profileNamespace setVariable ["menu_framework_Audio", _value]; // set the audio so it gets grabbed correctly when background changes

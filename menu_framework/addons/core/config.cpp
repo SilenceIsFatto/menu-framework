@@ -25,38 +25,8 @@ class CfgPatches
 	};
 };
 
-class CfgMusic 
+class CfgMusic
 {
-	class MOD(intro_1)
-	{
-		duration = 175; // + 10 seconds because it's music, no need to repeat immediately
-		musicClass = "calm";
-		name = "";
-		sound[] = {QPATHTOFOLDER(sounds\intro_1.ogg),1,1};
-		tags[] = {"bis"};
-		theme = "safe";
-		type = "ambient";
-	};
-	class MOD(intro_2)
-	{
-		duration = 234; // 224
-		musicClass = "calm";
-		name = "";
-		sound[] = {QPATHTOFOLDER(sounds\intro_2.ogg),1,1};
-		tags[] = {"bis"};
-		theme = "safe";
-		type = "ambient";
-	};
-	class MOD(intro_3)
-	{
-		duration = 206; // 196
-		musicClass = "calm";
-		name = "";
-		sound[] = {QPATHTOFOLDER(sounds\intro_3.ogg),1,1};
-		tags[] = {"bis"};
-		theme = "safe";
-		type = "ambient";
-	};
 	class MOD(rain_light)
 	{
 		duration = 104.359;
