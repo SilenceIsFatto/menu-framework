@@ -31,17 +31,16 @@
         path = QPATHTOFOLDER(videos\intro_winter.ogv);
         name = "Winter Soldier";
     };
+    class intro_nebula
+    {
+        path = QPATHTOFOLDER(videos\intro_nebula.ogv);
+        name = "Nebula";
+    };
     class intro_police
     {
         path = QPATHTOFOLDER(videos\intro_police.ogv);
         name = "SCO-19 Night Call (Rain)";
         song = "menu_framework_rain_light";
-    };
-    class intro_canada
-    {
-        path = QPATHTOFOLDER(videos\intro_canada.ogv);
-        name = "Canadian Army (Wind)";
-        song = "menu_framework_wind_long";
     };
 
     class Menu_None
