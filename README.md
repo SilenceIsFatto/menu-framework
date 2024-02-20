@@ -8,13 +8,13 @@
 
   ***
   
-  Adding your own song or video is pretty simple:
+  Adding your own video or song is pretty simple:
 
   All you need to do is add a new entry to either [cfgMenuVideos.hpp](https://github.com/SilenceIsFatto/menu-framework/blob/main/menu_framework/addons/core/configs/cfgMenuVideos.hpp) or [cfgMenuSongs.hpp](https://github.com/SilenceIsFatto/menu-framework/blob/main/menu_framework/addons/core/configs/cfgMenuSongs.hpp) respectively.
 
   You can pack this addon using the Arma Dev extension on vscode.
 
-  Likewise, if you have the knowledge, you can make this addon a dependency and implement the configs and such in your own addon.
+  Likewise, you can make this addon a dependency and implement the configs and such in your own addon.
 
   ***
 
